@@ -1,34 +1,41 @@
 /* Estilo base del navbar */
+/* Contenedor del navbar */
 .navbar {
   width: 100%;
+  display: flex;
+  justify-content: center; /* centra las pestañas */
 }
-
+/* Menú centrado */
 .navbar__menu {
   list-style: none;
   display: flex;
   gap: 10px;
   margin: 0;
   padding: 0;
+  position: relative;
+  bottom: -10px; /* hace que las pestañas queden pegadas al borde inferior */
 }
-
 .navbar__item {
   display: flex;
 }
 
+/* Estilo de cada pestaña */
 .navbar__link {
   display: block;
-  padding: 10px 16px;
+  padding: 10px 18px;
   text-decoration: none;
   color: #fff;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: none;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
   border-radius: 10px 10px 0 0;
   transition: background 0.2s ease;
 }
 
+
+/* Hover */
 .navbar__link:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.25);
 }
 
 /* Tab activa (la página actual) */
@@ -37,4 +44,5 @@
   color: #333;
   font-weight: bold;
   border-color: #ddd;
+  border-bottom-color: transparent; /* crea continuidad con el contenido */
 }
