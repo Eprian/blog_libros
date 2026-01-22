@@ -1,13 +1,21 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta lang="es">
-    <title>Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog de Libros</title>
+
+    <!-- IMPORTANTE: con Flask, los CSS van en /static/ -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='navigator.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='body.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
 </head>
-<nav>
-
-</nav>
 <body>
-    <h1>MI BLOG</h1>
+    {% include 'header.html' %}
+    {% include 'navigator.html' %}
+    {% include 'body.html' %}
+    {% include 'footer.html' %}
 </body>
+</html>
