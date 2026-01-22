@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
 </head>
 <body>
-    {% include 'header.html' %}
-    {% include 'body.html' %}
+    <header class="header">{% include 'header.html' %}</header>
+   <!--{% include 'body.html' %}--> 
     <main id="content">
         <!-- El contenido se cargará dinámicamente aquí -->
          {{ content | safe }}
