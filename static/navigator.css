@@ -4,6 +4,7 @@
   width: 100%;
   display: flex;
   justify-content: center; /* centra las pestañas */
+  bottom: 0; /* pega al borde inferior */
 }
 /* Menú centrado */
 .navbar__menu {
