@@ -2,4 +2,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Asegura que padding y border no añadan ancho extra */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura completa de la ventana */
+    position: relative;
 }
