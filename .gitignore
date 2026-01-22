@@ -1,0 +1,32 @@
+# Ignorar el entorno virtual
+.venv/
+venv/
+__pycache__/
+
+# Ignorar archivos compilados
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Ignorar archivos de configuración sensibles
+config.py
+secrets.py
+*.env
+
+# Ignorar archivos de registro
+*.log
+
+# Ignorar archivos de descarga
+*.zip
+*.tar.gz
+
+# Ignorar archivos temporales del editor
+*.swp
+*.swo
+*.idea/
+.vscode/
+
+# Ignorar archivos de sistema
+.DS_Store
