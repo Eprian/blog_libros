@@ -18,6 +18,7 @@
     {% include 'body.html' %}
     <main id="content">
         <!-- El contenido se cargará dinámicamente aquí -->
+         {{ content | safe }}
     </main>
     {% include 'footer.html' %}
 </body>

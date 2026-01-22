@@ -6,13 +6,13 @@ app = Flask(__name__)
 def index():
     return render_template("index.html", content='')# Contenido inicial
 
-@app.route("/contacto")
+@app.route("/")
 def contact():
-    return render_template("index.html", content="<h1>Contacto</h1><p>Aquí puedes contactarnos...</p>")
+    return render_template("contact.html", content="<h1>Contacto</h1><p>Aquí puedes contactarnos...</p>")
 
-@app.route("/acerca_de")
+@app.route("/")
 def about():
-    return render_template("index.html", content="<h1>Acerca de</h1><p>Información sobre el blog...</p>")
+    return render_template("about.html", content="<h1>Acerca de</h1><p>Información sobre el blog...</p>")
 
 @app.route("/<page_name>")
 def dynamic_page(page_name):
