@@ -7,9 +7,6 @@
   z-index: 1000;
   padding-bottom: 0; /* clave: sin padding inferior */
   width: 100%;
-}
-
-.header__container {
   display: flex;
   justify-content: center;
   align-items: center;
