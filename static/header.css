@@ -13,6 +13,7 @@
   justify-content: center; /* Centra el contenido horizontalmente */
   align-items: center;
   flex-direction: column; /* Apila los elementos verticalmente */
+  min-height: 80px; /* Establece una altura mínima para el header */
 }
 
 .header__logo {
@@ -21,7 +22,7 @@
   color: #fff;
   text-decoration: none;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-  margin-bottom: 50px;
+  margin-bottom: 10px; /* Agrega espacio entre el logo y las pestañas */
 }
 
 .header__logo:hover {

@@ -16,7 +16,7 @@
   margin: 0;
   padding: 0;
   position: relative;
-  bottom: -10px; /* hace que las pestañas queden pegadas al borde inferior */
+  bottom: -5px; /* hace que las pestañas queden pegadas al borde inferior */
 }
 .navbar__item {
   display: flex;
