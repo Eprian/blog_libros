@@ -10,8 +10,9 @@
   padding-bottom: 0; /* clave: sin padding inferior */
   width: 100%;
   display: flex;
-  justify-content: center; /* Distribuye el espacio entre el contenido del header y la barra de navegación */
+  justify-content: center; /* Centra el contenido horizontalmente */
   align-items: center;
+  flex-direction: column; /* Apila los elementos verticalmente */
 }
 
 .header__logo {
@@ -20,7 +21,7 @@
   color: #fff;
   text-decoration: none;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-  padding-top: 50px;
+  margin-bottom: 50px;
 }
 
 .header__logo:hover {
