@@ -1,9 +1,10 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-
+content = ""  # Define la variable content a nivel global
 @app.route("/")
 def index():
+    print(f"Contenido: {content}")  # Agrega esta línea
     return render_template("index.html", content='')# Contenido inicial
 
 @app.route("/")
