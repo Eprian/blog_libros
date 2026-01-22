@@ -1,7 +1,10 @@
 .header {
-  background: linear-gradient(90deg, #1e3a8a, #7c3aed);
+  background: linear-gradient(90deg, #0b3d91, #6b21a8);
   color: #fff;
   padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header__container {
