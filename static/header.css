@@ -2,13 +2,15 @@
   background: linear-gradient(90deg, #51b6f0, #195f99);
   color: #fff;
   padding: 20px;
+  padding-top: 50px; /* Aumenta el padding superior */
+  padding-bottom: 50px; /* Aumenta el padding inferior */
   position: sticky;
   top: 0;
   z-index: 1000;
   padding-bottom: 0; /* clave: sin padding inferior */
   width: 100%;
   display: flex;
-  justify-content: space-between; /* Distribuye el espacio entre el contenido del header y la barra de navegación */
+  justify-content: center; /* Distribuye el espacio entre el contenido del header y la barra de navegación */
   align-items: center;
 }
 
