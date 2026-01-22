@@ -16,6 +16,9 @@
     {% include 'header.html' %}
     {% include 'navigator.html' %}
     {% include 'body.html' %}
+        <main id="content">
+        {% block content %}{% endblock %}
+    </main>
     {% include 'footer.html' %}
 </body>
 </html>
