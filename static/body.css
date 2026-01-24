@@ -5,3 +5,12 @@ body {
     min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura completa de la ventana */
     position: relative;
 }
+
+#content {
+  background: #fff;
+  padding: 30px;
+  margin-top: -1px; /* CLAVE: se mete bajo la pestaña */
+  border-radius: 0 0 12px 12px;
+  position: relative;
+  z-index: 1;
+}
