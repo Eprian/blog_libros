@@ -27,7 +27,7 @@ def autores():
 def contacto():
     return render_template(
         "index.html",
-        content="<h1>Contacto</h1>"
+        content=render_template("contact.html")
     )
 
 if __name__ == "__main__":
