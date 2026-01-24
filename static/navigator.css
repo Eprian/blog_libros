@@ -1,13 +1,15 @@
 /* Estilo base del navbar */
 /* Contenedor del navbar */
 .navbar {
-  width: 100%;
-  display: flex;
-  justify-content: center; /* centra las pestañas */
-  bottom: 0; /* pega al borde inferior */
   position: absolute;
+  bottom: 0; /* PEGADO AL BORDE INFERIOR */
   left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
 }
+
 /* Menú centrado */
 .navbar__menu {
   list-style: none;
