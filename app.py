@@ -13,7 +13,7 @@ def inicio():
 def libros():
     return render_template(
         "index.html",
-        content="<h1>Libros</h1>"
+        content=render_template("books.html")
     )
 
 @app.route("/autores")

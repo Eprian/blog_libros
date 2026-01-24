@@ -1,0 +1,8 @@
+.books {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.books h1 {
+  margin-bottom: 15px;
+}
