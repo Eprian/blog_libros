@@ -1,17 +1,20 @@
-  <ul class="navbar__menu">
-    <li class="navbar__item">
-      <a href="/" class="navbar__link {% if request.path == '/' %}active{% endif %}">Inicio</a>
-    </li>
-    <li class="navbar__item">
-      <a href="/libros" class="navbar__link {% if request.path == '/libros' %}active{% endif %}">Libros</a>
-    </li>
-    <li class="navbar__item">
-      <a href="/autores" class="navbar__link {% if request.path == '/autores' %}active{% endif %}">Autores</a>
-    </li>
-    <li class="navbar__item">
-      <a href="/contacto" class="navbar__link {% if request.path == '/contacto' %}active{% endif %}">Contacto</a>
-    </li>
-  </ul>
+  <nav>
+      <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="/" class="navbar__link {% if request.path == '/' %}active{% endif %}">Inicio</a>
+      </li>
+      <li class="navbar__item">
+        <a href="/libros" class="navbar__link {% if request.path == '/libros' %}active{% endif %}">Libros</a>
+      </li>
+      <li class="navbar__item">
+        <a href="/autores" class="navbar__link {% if request.path == '/autores' %}active{% endif %}">Autores</a>
+      </li>
+      <li class="navbar__item">
+        <a href="/contacto" class="navbar__link {% if request.path == '/contacto' %}active{% endif %}">Contacto</a>
+      </li>
+    </ul> 
+  </nav>
+ 
 
 
 

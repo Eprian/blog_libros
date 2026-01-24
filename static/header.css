@@ -1,28 +1,33 @@
 .header {
   background: linear-gradient(90deg, #51b6f0, #195f99);
   color: #fff;
-  padding: 20px;
-  padding-top: 100px; /* Aumenta el padding superior */
-  padding-bottom: 50px; /* Aumenta el padding inferior */
+
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding-bottom: 0; /* clave: sin padding inferior */
+
   width: 100%;
+  height: 160px; /* altura real del header */
+
   display: flex;
-  justify-content: center; /* Centra el contenido horizontalmente */
+  justify-content: center; /* centra verticalmente */
   align-items: center;
-  flex-direction: column; /* Apila los elementos verticalmente */
-  min-height: 80px; /* Establece una altura mínima para el header */
 }
 
+/* contenedor SOLO del logo */
+.header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* logo perfectamente centrado */
 .header__logo {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-  margin-bottom: 20px; /* Reduce el margen inferior para no tocar las pestañas */
 }
 
 .header__logo:hover {
