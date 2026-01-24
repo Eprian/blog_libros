@@ -2,18 +2,32 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 content = ""  # Define la variable content a nivel global
-@app.route("/")
-def index():
-    print(f"Contenido: {content}")  # Agrega esta línea
-    return render_template("index.html", content='')# Contenido inicial
+def inicio():
+    return render_template(
+        "index.html",
+        content=render_template("about.html")
+    )
 
-@app.route("/")
-def contact():
-    return render_template("contact.html", content="<h1>Contacto</h1><p>Aquí puedes contactarnos...</p>")
+@app.route("/libros")
+def libros():
+    return render_template(
+        "index.html",
+        content="<h1>Libros</h1>"
+    )
 
-@app.route("/")
-def about():
-    return render_template("about.html", content="<h1>Acerca de</h1><p>Información sobre el blog...</p>")
+@app.route("/autores")
+def autores():
+    return render_template(
+        "index.html",
+        content="<h1>Autores</h1>"
+    )
+
+@app.route("/contacto")
+def contacto():
+    return render_template(
+        "index.html",
+        content="<h1>Contacto</h1>"
+    )
 
 @app.route("/<page_name>")
 def dynamic_page(page_name):
